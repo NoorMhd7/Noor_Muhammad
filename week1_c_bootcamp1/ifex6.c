@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main() {
 int number;    
-printf("Please enter the number between 0 and 100 or enter -1 to end this: ");
-scanf("%d", &number);
+    while (1) {
+        printf("Please enter the number between 0 and 100 or enter -1 to end this:\n");
+        scanf("%d", &number);
 
-  while (1) {
         if ( number == -1)
-        {printf( "You have reached the termination value"); break;
+        {printf( "You have reached the termination value. \n"); break;
         }
             else if (number >= 0 && number <=100)
-        {printf("You have entered the valid number to continue");
+        {printf("You have entered the valid number to continue. \n");
         }
             else  
-        {printf("Inavalid number");
+        {printf("Inavalid number\n");
         }
    }
 
